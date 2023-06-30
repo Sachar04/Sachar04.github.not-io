@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glorian'</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    /* Add custom CSS styles for animation */
+    *{
+        box-sizing: border-box;
+    }
+
+    li{
+        text-decoration: underline;
+    }
+
+    .faq p{
+        font-size: 2rem;
+        margin: 0 0 1.5rem 0;
+    }
+    .faq-list {
+      list-style: none;
+      padding: 0;
+      
+    }
+
+    .faq-list li {
+      background-color: rgba(0, 0, 0, 0.057);
+      padding: 1rem 1rem 1rem;
+      margin-bottom: 20px;
+      cursor: pointer;
+      background-image: url('./img/icons/info.svg');
+      background-repeat: no-repeat;
+      background-size: 2rem;
+      background-position-x: 95%;
+      background-position-y: 10%;
+      background-position: fixed;
+      border-radius: 0.2rem;
+      box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.171);
+    }
+    
+    .faq-list li p{
+        font-size: 1.1rem;
+        font-weight: 600;
+        background-color: none;
+        text-decoration: none;
+    }
+
+    li .one{
+        background-attachment: unset ;
+        background-position-x: 95%;
+      background-position-y: center;
+    }
+
+    li .two{
+        background-attachment: fixed;
+        background-position-x: 95%;
+      background-position-y: center;
+    }
+
+    li .three{
+        background-attachment: fixed;
+        background-position-x: 5%;
+      background-position-y: center;
+    }
+
+    li .four{
+        background-attachment: fixed;
+        background-position-x: 95%;
+      background-position-y: center;
+    }
+
+    li .five{
+        background-attachment: fixed;
+        background-position-x: 95%;
+        background-position-y: center;
+    }
+
+    li .six{
+        background-attachment: fixed;
+        background-position-x: 95%;
+      background-position-y: center;
+    }
+
+    .faq-list li p {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+
+    }
+
+    .faq-list li.active p {
+      max-height: 500px;
+      transition: max-height 0.3s ease;
+      text-decoration: none;
+    }
+
+    .faq-list li.active {
+        text-decoration: none;
+    }
+
+    form{
+      border: solid black 2px;
+      border-radius: 0.5rem; 
+      padding: 1rem;
+    }
+
+    form div{
+      margin: 1rem;
+    }
+
+    form input{
+      position: absolute;
+      left: 22.5vw;
+      margin-left: 1rem;
+      border: solid black 0.5px;
+      padding: 0.25rem;
+      padding-top: 0.2rem;
+      border-radius: 0.2rem;
+      box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.486);
+    }
+
+    form .form-message {
+
+    }
+
+    form .form-message textarea{
+      position: relative;
+      padding: 0.25rem;
+      padding-top: 0.2rem;
+      left: 7.5%;
+      border: solid black 0.5px;
+      border-radius: 0.2rem;
+      box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.486);
+    }
+
+    form .form-message label{
+      position: relative;
+      bottom: 1.5rem;
+    }
+
+    form button {
+      padding: 0.25rem;
+      position: relative;
+      left: .95rem;
+      background-color: transparent;
+      border: solid black 1.5px;
+      border-radius: 0.5rem;
+    }
+
+    form button:hover{
+      font-size: 85%;
+      padding: 0.25rem;
+      position: relative;
+      background-color: transparent;
+      border: solid black 1.5px;
+      border-radius: 0.5rem;
+      background-color: rgba(0, 0, 0, 0.201);
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <section class="front-page">
+    <img class="hero" src="img/sky2.jpg" alt="">
+    <img class="hero2" src="soft.jpg" alt="">
+
+    <nav>
+      <div class="logo">
+        <img src="./img/logo.png" alt="gloria">
+        
+
+            <h1> <a href="/index.html">Home</a></h1>
+            <h1><a href="/products.html">Leistungen </a></h1>
+            <h1><a href="/services.html">Preise </a></h1>
+            <h1><a href="/solarium.html">Solarium </a></h1>
+            <h1><a href="/contact.html">Kontakt / FAQ</a></h1>
+
+
+    </div>
+    <div class="links">
+        <a href="/index.html">Startseite</a>
+        <a href="/services.html">Unsere Leistungen</a>
+        <a href="/solarium.html">Unser Solarium</a>
+        <a href="/contact.html">Kontakt / FAQ</a>
+    </div>
+
+      <svg width="44" height="18" viewBox="0 0 44 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line class="line" y1="1" x2="44" y2="1" stroke="white" stroke-width="2" />
+        <line class="line" y1="9" x2="27" y2="9" stroke="white" stroke-width="2" />
+        <line class="line" y1="17" x2="11" y2="17" stroke="white" stroke-width="2" />
+      </svg>
+    </nav>
+  </section>
+
+  <div class="contact-page">
+    <div class="faq">
+      <p>FAQ</p>
+    </div>
+    <div class="contact">
+        <ul class="faq-list">
+          <li class="one">Gibt es besondere Rabatte oder Angebote für Stammkunden?
+            <p>Ja, wir haben spezielle Angebote und Rabatte für Stammkunden. Bitte erkundigen Sie sich bei Ihrem Besuch im Salon oder über unsere Website nach aktuellen Aktionen und Treueprogrammen.</p>
+          </li>
+          <li class="two">Welche Produkte werden in Ihren Behandlungen verwendet?
+            <p>  Wir verwenden hochwertige Kosmetikprodukte, die sorgfältig ausgewählt wurden, um optimale Ergebnisse und eine angenehme Erfahrung zu gewährleisten. Unsere Mitarbeiter beraten Sie gerne zu den verwendeten Produkten und empfehlen Ihnen geeignete Produkte für die Heimpflege. </p>
+          </li>
+          <li class="three">Kann ich meine Termine stornieren oder verschieben?
+            <p> Ja, wir verstehen, dass sich Termine manchmal ändern können. Bitte informieren Sie uns so früh wie möglich, wenn Sie Ihren Termin stornieren oder verschieben müssen. Beachten Sie jedoch, dass eine rechtzeitige Stornierung erforderlich ist, um Stornogebühren zu vermeiden.</p>
+          </li>
+          <li class="four">Sind Ihre Mitarbeiter zertifiziert und erfahren?
+            <p>Ja, unser Team besteht aus qualifizierten und erfahrenen Fachkräften im Bereich Kosmetik und Massage. Sie sind bestens ausgebildet, um Ihnen professionelle und qualitativ hochwertige Dienstleistungen anzubieten.</p>
+          </li>
+          <li class="five">Wie hoch sind die Kosten für die verschiedenen Dienstleistungen?
+            <p>Die Preise unserer Dienstleistungen variieren je nach Art der Behandlung. Bitte besuchen Sie unsere Preisliste auf der Website, um detaillierte Informationen zu den Kosten zu erhalten. Bei spezifischen Fragen zu den Preisen stehen Ihnen unsere Mitarbeiter gerne zur Verfügung.</p>
+    
+          <li class="six"> Benötige ich einen Termin für eine Sonnenbank-Sitzung?
+            <p>Nein, für die Nutzung unserer Sonnenbänke ist kein Termin erforderlich. Sie können jederzeit vorbeikommen und eine Sonnenbank-Sitzung genießen. Es handelt sich um einen Walk-in-Service.</p>
+          </li>
+        </ul>
+        </div>
+
+        <form action="submit_form.php" method="POST">
+
+          <div class="form-name">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <br>
+          </div>
+
+          <div class="form-email">
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email">
+            <br>
+          </div>
+            
+          <div class="form-message">
+            <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" required placeholder="Заполни меня семпай UwU " oninvalid="this.setCustomValidity('Заполни меня семпай UwU')"></textarea>
+            <br>
+          </div>
+            
+          <div class="form-phone">
+            <label for="phone">Phone Number:</label>
+            <input type="number" id="phone" name="phone">
+            <br>
+          </div>
+            
+          <div class="form-contact-method">
+            <label for="contact-method">Wie können wir Sie erreichen:</label>
+            <select id="contact-method" name="contact-method">
+
+            <option value="email" selected="email">via Email</option>
+            <option value="number" selected="phone">via Phone</option>
+            </select>
+            <br>
+          </div>
+            
+
+            <button class="submit" type="submit">Submit</button>
+        </form>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js" integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+    <script src="./contact.js"></script>
+
+</body>
