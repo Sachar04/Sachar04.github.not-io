@@ -26,13 +26,13 @@ section{
 }
 
 h2{
-    font-size: 1.5rem;
+    font-size: 15rem;
     line-height: 125%;
     padding: 1rem 0rem;
 }
 
 h3 {
-    font-size: 1.25rem;
+    font-size: 12.5rem;
     line-height: 125%;
 }
 
@@ -40,7 +40,7 @@ nav{
     display: flex;
     position: relative;
     background-color: rgba(0, 0, 0, 0.542);
-    border-radius: 0.25rem;
+    border-radius: 2.5rem;
     align-items: center;
     width: 90vw;
     justify-content: space-between;
@@ -79,7 +79,7 @@ nav .sticky{
 
 .links a{
     color: var(--secondary-color);
-    font-size: 2rem;
+    font-size: 20rem;
 }
 
 .logo{
@@ -215,7 +215,7 @@ button:hover::after {
 }
 
 .ctas button:hover{
-    font-size: 1.2rem;
+    font-size: 12rem;
     text-decoration: underline;
 }
 .cta-main{
