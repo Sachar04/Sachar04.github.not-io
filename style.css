@@ -91,7 +91,7 @@ body{
     top: 50%;
     left: 2%;
   }
-  .tests div{
+  .tests #Awards, #FLASHBACKS, #JAVASCRIPT, #CSS, #HTML, #PYTHON { 
     height: 100vh;
     width: 100vw;
   }
@@ -148,9 +148,294 @@ body{
     background-color: rgb(0, 17, 128);
 }
 
-.tests #SWIFT {
-    background-color: rgb(128, 0, 0);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tests div #SWIFT {
+    min-height: 150dvh;
+    min-width: 100dwh;
+    max-height: 200dvh;
+    max-width: 200dwh;
 }
+
+@font-face {
+    font-family: "Creepy";
+    src: url("Assets/Fonts/Creepy.woff") format("woff"),
+         url("Assets/Fonts/Creepy.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Lunacy";
+    src: url("Assets/Fonts/Lunacy.woff") format("woff"),
+         url("Assets/Fonts/Lunacy.woff2") format("woff2");
+}
+
+.tests #SWIFT .thebody {
+  box-sizing: border-box;
+  min-height: 150vh;
+  cursor: url(Assets/Cursors/Ghost.cur), auto;
+  font-family: Lunacy;
+  background: radial-gradient(#9D5900, #3D2200);
+  margin: 0;
+  padding-bottom: 2%;
+}
+
+.tests #SWIFT .page-title {
+  color: #FF6D00;
+  font-family: Creepy, serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 6em;
+}
+
+.tests #SWIFT .game-info-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tests #SWIFT .game-info {
+  color: #FFBB89;
+  font-size: 4em;
+}
+
+.tests #SWIFT .game-container {
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  justify-content: center;
+  perspective: 500px;
+}
+
+.tests #SWIFT .card {
+  position: relative;
+  cursor: url("Assets/Cursors/GhostHover.cur"), auto;
+  height: 175px;
+  width: 125px;
+}
+
+.tests #SWIFT .card-face {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  overflow: hidden;
+  transition: transform 500ms ease-in-out;
+  backface-visibility: hidden;
+}
+
+.tests #SWIFT .card.visible .card-back {
+  transform: rotateY(-180deg); 
+}
+
+.tests #SWIFT .card.visible .card-front {
+  transform: rotateY(0); 
+}
+
+.tests #SWIFT .card.matched .card-front .card-value {
+  animation: dance 1s linear infinite 500ms;
+}
+
+.tests #SWIFT .card-back {
+  background-color: black;
+  border-color: #FF6D00;
+  transform: rotateY(0); 
+}
+
+.tests #SWIFT .cob-web {
+  position: absolute;
+  transition: width 100ms ease-in-out, height 100ms ease-in-out;
+  width: 47px;
+  height: 47px;
+}
+
+.tests #SWIFT .card-face:hover .cob-web {
+  width: 52px;
+  height: 52px;
+}
+
+.tests #SWIFT .cob-web-top-left {
+  transform: rotate(270deg);
+  top: 0;
+  left: 0;
+}
+
+.tests #SWIFT .cob-web-top-right {
+  top: 0;
+  right: 0;
+}
+
+.tests #SWIFT .cob-web-bottom-left {
+  transform: rotate(180deg);
+  bottom: 0;
+  left: 0;
+}
+
+.tests #SWIFT .cob-web-bottom-right {
+  transform: rotate(90deg);
+  bottom: 0;
+  right: 0;
+}
+
+.tests #SWIFT .spider {
+  align-self: flex-start;
+  transition: transform 100ms ease-in-out;
+  transform: translateY(-10px);
+}
+
+.tests #SWIFT .card-back:hover .spider {
+  transform: translateY(0);
+}
+
+.tests #SWIFT .card-value {
+  position: relative;
+  transition: transform 100ms ease-in-out;
+  transform: scale(.9);
+}
+
+.tests #SWIFT .card-front:hover .card-value {
+  transform: scale(1);
+}
+
+.tests #SWIFT .card-front {
+  background-color: #FFBB89;
+  border-color: #333;
+  transform: rotateY(180deg);
+}
+
+.tests #SWIFT .overlay-text {
+  padding-top: 1.5rem;
+  z-index: 100;
+  width: 80dvw;
+  left: 10%;
+  size: cover;
+  display: none;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #FF6D00;
+  border-radius: 1rem;
+  font-family: Creepy, serif;
+  transition: background-color 500ms, font-size 500ms;
+}
+
+.tests #SWIFT .overlay-text-small {
+    font-size: .3em;
+}
+
+.tests #SWIFT .overlay-text.visible {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.286) !important;
+    animation: overlay-grow 500ms forwards;
+}
+
+@keyframes dance {
+  0%, 100% {
+    transform: rotate(0)
+  }
+  25% {
+    transform: rotate(-30deg)
+  }
+  75% {
+    transform: rotate(30deg)
+  }
+}
+
+@keyframes overlay-grow {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 0;
+  }
+  to {
+    background-color: rgba(0, 0, 0, .8);
+    font-size: 5em;
+  }
+}
+
+@media (max-width: 600px) {
+    .tests #SWIFT .game-container {
+    grid-template-columns: repeat(4, auto)
+  }
+
+  .tests #SWIFT .overlay-text-small {
+    font-size: 20px !important;
+}
+
+  .tests #SWIFT .card{
+    height: 82.5px;
+    width: 62.5px;
+  }
+
+  .tests #SWIFT .card-face .cob-web {
+    height: 23.5px;
+    width: 23.5px;
+  }
+
+  .tests #SWIFT .card-face:hover .cob-web {
+    width: 27.5px;
+    height: 27.5px;
+  }
+
+  .tests #SWIFT .card-front .card-value{
+    transform: scale(0.5);
+  }
+
+  .tests #SWIFT .card.matched .card-front .card-value{
+    width: 35px;
+  }
+  .tests #SWIFT .card-front:hover .card-value {
+    transform: scale(0.5);
+  }
+  
+  .tests #SWIFT .spider {
+    align-self: flex-start;
+    width: 50px;
+    height: 62px;
+    transition: transform 100ms ease-in-out;
+    transform: translateY(-10px);
+  }
+  
+  .tests #SWIFT .card-back:hover .spider {
+    transform: translateY(0);
+
+  }
+
+  .tests #SWIFT .game-info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+
+
 
 /* Add the rest of the CSS rules for the remaining items in the list */
 .tests #MONGOOSE {
