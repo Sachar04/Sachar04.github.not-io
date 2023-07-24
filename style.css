@@ -148,6 +148,9 @@ body{
     background-color: rgb(0, 17, 128);
 }
 
+kkd{
+  color: #8d3d04;
+}
 
 
 
@@ -189,7 +192,7 @@ body{
 .tests #SWIFT .thebody {
   box-sizing: border-box;
   min-height: 150vh;
-  cursor: url(Assets/Cursors/Ghost.cur), auto;
+  cursor: url('Assets/Cursors/Water.svg'), auto;
   font-family: Lunacy;
   background: radial-gradient(#9D5900, #3D2200);
   margin: 0;
@@ -226,7 +229,7 @@ body{
 
 .tests #SWIFT .card {
   position: relative;
-  cursor: url("Assets/Cursors/GhostHover.cur"), auto;
+  cursor: url("Assets/Cursors/Oolong.svg"), auto;
   height: 175px;
   width: 125px;
 }
