@@ -12,5 +12,6 @@ And i did not do any adequate optimization for various devices or browsers, but 
 
 #### Remarks
 > There is a memory game, have fun and go play it
+> 
 > There are a lot of things that doesn't make any sence, please just avoid
 > I will maybe return to this project, clean a little and optimize everything as much as I can but I do not promise anything.
